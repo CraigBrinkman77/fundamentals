@@ -19,7 +19,7 @@ class User:
     def transfer_money(self, friend, ammount):
         self.balance -= ammount
         friend.balance += ammount
-        print(f'My balance: {self.balance} Friends Balance: {friend.balance}')
+        print(f"My balance: {self.balance} Friend's Balance: {friend.balance}")
 
 
 
