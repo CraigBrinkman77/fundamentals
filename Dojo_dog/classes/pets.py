@@ -1,7 +1,6 @@
 class Dog:
     def __init__(self, name, tricks, health, energy):
         self.name = name
-        self.type = type
         self.tricks = tricks
         self.health = health
         self.energy = energy
