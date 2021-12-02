@@ -38,8 +38,8 @@ class User:
     def display_user_balance(self,acct_num):
         print(self.account[acct_num].balance)
     
-    def transfer_money(self, friend, ammount):
-        self.balance -= ammount
+    def transfer_money(self, acct_num, friend, ammount):
+        self.account[acct_num].balance -= ammount
         friend.balance += ammount
         print(f"My balance: {self.balance} Friend's Balance: {friend.balance}")
 
