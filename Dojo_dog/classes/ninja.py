@@ -13,4 +13,4 @@ class Ninja:
         self.pet.eat()
 
     def bathe(self, pet):
-        self.pet.noise()
+        self.pet.make_noise()

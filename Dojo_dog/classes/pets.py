@@ -1,10 +1,11 @@
 class Dog:
-    def __init__(self, name, tricks, health, energy):
+    def __init__(self, name, tricks, health, energy, noise):
         self.name = name
         self.tricks = tricks
         self.health = health
         self.energy = energy
-        
+        self.noise = noise
+
     def play(self):
         self.health += 5
 
@@ -15,10 +16,10 @@ class Dog:
     def sleep(self):
         self.health += 5
         self.energy += 5
+    
+    def make_noise(self):
+        print(self.noise)
 
 class Chihuahua ( Dog ):
-    def __init__(self, name, tricks, health, energy):
-        super().__init__(name, tricks, health, energy)
-    
-    def noise(self):
-        print("nooooo pweees")
+    def __init__(self, name, tricks, health, energy, noise):
+        super().__init__(name, tricks, health, energy, noise)
